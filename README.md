@@ -13,4 +13,10 @@ python main.py
 ## for MAE-DFER
 ### Data Preparation
 move AU_DFEW.txt to [saved/data/dfew](MAE-DFER_AU/saved/data/dfew), or or AU_FERV39K.txt to [saved/data/ferv39k](MAE-DFER_AU/saved/data/ferv39k).
-After adding the AU label txt, edit in 
+After adding the AU label txt, edit data_path in [dfew.py](MAE-DFER_AU/preprocess/dfew.py), or [ferv39k.py](MAE-DFER_AU/preprocess/ferv39k.py).
+Then run the preprocessing code.
+```bash
+cd ./MAE-DFER_AU/preprocess
+python dfer.py
+python ferv39k.py
+```

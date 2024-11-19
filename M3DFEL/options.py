@@ -44,7 +44,9 @@ class Options(object):
         parser.add_argument('--model', default='r3d',
                             type=str, help='Backbone')
         parser.add_argument('--posw_option', default='global' ,type=str)
+        # for pos_weight setting, 'global', 'distinct', 'minor' accepted.
         parser.add_argument('--AU_weight', default=0.25, type=float)
+        # the ratio of AU loss and expression loss, should be between 0 and 1.
 
         # training hyperparameters
         parser.add_argument('--label_smoothing', default=0.1,

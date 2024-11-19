@@ -1,6 +1,6 @@
 # AU-DFER
 source code for AU-enhanced DFER
-## for FERV39K
+## for M3DFEL
 ### Data Preparation
 move AU_DFEW.txt or AU_FERV39K.txt (according to the dataset for trainning) to ./datasets
 ### Libraries and Dependencies
@@ -10,3 +10,5 @@ All settings are included in options.py. Please change the parameter root into t
 ```bash
 python main.py
 ```
+## for MAE-DFER
+### Data Preparation

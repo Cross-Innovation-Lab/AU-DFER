@@ -33,7 +33,7 @@ sh scripts/dfew/finetune_local_global_attn_depth16_region_size2510_with_diff_tar
 ```
 If you are fine-tuning on FERV39K:
 ```bash
-sh scripts/mafw/finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh
+sh scripts/ferv39k/finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh
 ```
 ## for Former-DFER
 ### Libraries and Dependencies
@@ -47,4 +47,15 @@ python script.py
 If you are using DFEW, please run following AU label set split:
 ```bash
 python gen_sets_AU.py
+```
+### Run training code
+For 5-sets traning on DFEW:
+```bash
+cd ..
+sh sh main_DFEW_trainer.sh
+```
+For FERV39K:
+```bash
+cd ..
+python main_FERV39K.py
 ```

@@ -2,5 +2,5 @@
 source code for AU-enhanced DFER
 ## for FERV39K
 ### Data Preparation
-put AU_DFEW.txt/AU_FERV39K to ./dataset
+put AU_DFEW.txt or AU_FERV39K (according to the dataset for trainning) to ./datasets
 ### Libraries and Dependencies

@@ -23,13 +23,28 @@ python dfew.py
 python ferv39k.py
 ```
 ### Change Settings
-AU_ratio and posw_settings can be changed in [finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh](MAE-DFER_AU/scripts/dfew/finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh) or [finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh](MAE-DFER_AU/scripts/ferv39k/finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh)
+AU_ratio and posw_settings can be changed in [finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh](MAE-DFER_AU/scripts/dfew/finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh) or [finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh](MAE-DFER_AU/scripts/ferv39k/finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh).
+You can also change other parameters if you wish.
 
+### Run fine-tuning code
+If you are fine-tuning on DFEW:
+```bash
+sh scripts/dfew/finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh
+```
+If you are fine-tuning on FERV39K:
+```bash
+sh scripts/mafw/finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh
+```
 ## for Former-DFER
 ### Libraries and Dependencies
 ### Data Preparation
 Please move AU_DFEW.txt or AU_FERV39K.txt (according to the dataset for trainning) to [annotation](Former-DFER_AU/annotation)
+Then run the annotation code.
 ```bash
 cd ./Former-DFER_AU/annotation
 python script.py
+```
+If you are using DFEW, please run following AU label set split:
+```bash
+python gen_sets_AU.py
 ```

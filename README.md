@@ -12,4 +12,4 @@ python main.py
 ```
 ## for MAE-DFER
 ### Data Preparation
-move AU_DFEW.txt or AU_FERV39K.txt (according to the dataset for trainning) to ./datasets
+move AU_DFEW.txt to [saved/data/dfew](MAE-DFER_AU/saved/data/dfew), or or AU_FERV39K.txt to [saved/data/ferv39k](MAE-DFER_AU/saved/data/ferv39k).

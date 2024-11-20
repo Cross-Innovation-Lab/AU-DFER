@@ -2,14 +2,14 @@
 source code for AU-enhanced DFER
 ## Specification of Key Arguments
 * `--AU_ratio`: the ratio of AU loss and expression loss, a float between 0 and 1.
-* `posw_option`: determines the method of pos_weight for AU loss calculation, 'global', 'distinct', 'minor' accepted.
+* `--posw_option`: determines the method of pos_weight for AU loss calculation, 'global', 'distinct', 'minor' accepted.
 ## for M3DFEL
 ### Libraries and Dependencies
 python 3.9 is required. For dependencies, please refer to [requirements.txt](M3DFEL_AU/requirements.txt).
 ### Data Preparation
 move AU_DFEW.txt or AU_FERV39K.txt (according to the dataset for trainning) to [datasets](M3DFEL_AU/datasets).
 ### Change Directory and Settings
-All settings are included in [options.py](M3DFEL_AU/options.py). Please change the parameter root into the root directory of datasets, and other parameters if necessary.
+All key parameters are included in [options.py](M3DFEL_AU/options.py). Please change the parameter `root` into the root directory of datasets, and other parameters if necessary.
 ### run the training code
 ```bash
 python main.py

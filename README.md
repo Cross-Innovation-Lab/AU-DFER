@@ -8,8 +8,8 @@ source code for AU-enhanced DFER
 python 3.9 is required. For dependencies, please refer to [requirements.txt](M3DFEL_AU/requirements.txt).
 ### Data Preparation
 move AU_DFEW.txt or AU_FERV39K.txt (according to the dataset for trainning) to [datasets](M3DFEL_AU/datasets).
-### Change Directory and Settings
-All key parameters are included in [options.py](M3DFEL_AU/options.py). Please change the parameter `root` into the root directory of datasets, and other parameters if necessary.
+### Choose parameters
+All key parameters are included in [options.py](M3DFEL_AU/options.py). Please change the parameter `--root` into the root directory of datasets, and other parameters if necessary.
 ### run the training code
 ```bash
 python main.py
@@ -27,7 +27,7 @@ cd ./MAE-DFER_AU/preprocess
 python dfew.py
 python ferv39k.py
 ```
-### Change Settings
+### Choose parameters
 AU_ratio and posw_settings can be changed in [finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh](MAE-DFER_AU/scripts/dfew/finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh) or [finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh](MAE-DFER_AU/scripts/ferv39k/finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh).
 You can also change other parameters if you wish.
 
@@ -54,6 +54,8 @@ If you are using DFEW, please run following AU label set split:
 ```bash
 python gen_sets_AU.py
 ```
+### Choose parameters
+All key parameters are specified in [main_DFEW.py](Former-DFER_AU/main_DFEW.py) and [main_FERV39K.py](Former-DFER_AU/main_FERV39K.py).
 ### Run training code
 For 5-sets trainng on DFEW:
 ```bash

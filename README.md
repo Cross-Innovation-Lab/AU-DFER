@@ -1,3 +1,131 @@
+```
+.
+├── AU_DFEW.txt
+├── AU_FERV39K.txt
+├── Former-DFER_AU
+│   ├── annotation
+│   │   ├── DFEW_set_1_test.txt
+│   │   ├── DFEW_set_1_train.txt
+│   │   ├── DFEW_set_2_test.txt
+│   │   ├── DFEW_set_2_train.txt
+│   │   ├── DFEW_set_3_test.txt
+│   │   ├── DFEW_set_3_train.txt
+│   │   ├── DFEW_set_4_test.txt
+│   │   ├── DFEW_set_4_train.txt
+│   │   ├── DFEW_set_5_test.txt
+│   │   ├── DFEW_set_5_train.txt
+│   │   ├── FERV39K_test.txt
+│   │   ├── FERV39K_train.txt
+│   │   ├── gen_sets_AU.py
+│   │   └── script.py
+│   ├── dataloader
+│   │   ├── dataset_AFEW.py
+│   │   ├── dataset_DFEW.py
+│   │   ├── dataset_FERV39K.py
+│   │   └── video_transform.py
+│   ├── main_DFEW.py
+│   ├── main_DFEW_trainer.sh
+│   ├── main_FERV39K.py
+│   ├── models
+│   │   ├── ST_Former.py
+│   │   ├── S_Former.py
+│   │   └── T_Former.py
+│   └── requirements.txt
+├── LICENSE
+├── M3DFEL_AU
+│   ├── datasets
+│   │   ├── __init__.py
+│   │   ├── dataset_DFEW_AU_weighted.py
+│   │   ├── dataset_FERV39K_AU_weighted.py
+│   │   └── video_transform.py
+│   ├── main.py
+│   ├── models
+│   │   ├── M3DFEL_with_AU_weighted.py
+│   │   └── __init__.py
+│   ├── options.py
+│   ├── requirements.txt
+│   ├── solver_with_AU_weighted.py
+│   └── utils.py
+├── MAE-DFER_AU
+│   ├── datasets.py
+│   ├── engine_for_finetuning.py
+│   ├── engine_for_pretraining.py
+│   ├── environment.yml
+│   ├── functional.py
+│   ├── kinetics.py
+│   ├── preprocess
+│   │   ├── dfew.py
+│   │   ├── ferv39k.py
+│   │   └── voxceleb2.py
+│   ├── requirements.txt
+│   ├── saved
+│   │   └── data
+│   │       ├── dfew
+│   │       │   └── org
+│   │       │       ├── split01
+│   │       │       │   ├── test.csv
+│   │       │       │   ├── train.csv
+│   │       │       │   └── val.csv
+│   │       │       ├── split02
+│   │       │       │   ├── test.csv
+│   │       │       │   ├── train.csv
+│   │       │       │   └── val.csv
+│   │       │       ├── split03
+│   │       │       │   ├── test.csv
+│   │       │       │   ├── train.csv
+│   │       │       │   └── val.csv
+│   │       │       ├── split04
+│   │       │       │   ├── test.csv
+│   │       │       │   ├── train.csv
+│   │       │       │   └── val.csv
+│   │       │       └── split05
+│   │       │           ├── test.csv
+│   │       │           ├── train.csv
+│   │       │           └── val.csv
+│   │       └── ferv39k
+│   │           └── all_scenes
+│   │               ├── test.csv
+│   │               └── train.csv
+│   └── scripts
+│       ├── dfew
+│       │   └── finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh
+│       ├── ferv39k
+│       │   └── finetune_local_global_attn_depth16_region_size2510_with_diff_target_164.sh
+│       └── voxceleb2
+│           └── pretrain_local_global_attn_depth16_region_size2510_with_diff_target_102.sh
+├── README.md
+├── directory_tree.md
+└── log
+    ├── Former-DFER_DFEW
+    │   ├── Former-DFER_AU
+    │   │   ├── set1-log.txt
+    │   │   ├── set2-log.txt
+    │   │   ├── set3-log.txt
+    │   │   ├── set4-log.txt
+    │   │   └── set5-log.txt
+    │   └── Former-DFER_baseline
+    │       ├── set1-log.txt
+    │       ├── set2-log.txt
+    │       ├── set3-log.txt
+    │       ├── set4-log.txt
+    │       └── set5-log.txt
+    ├── Former-DFER_FERV39K
+    │   ├── FormerDFER_AU.txt
+    │   └── FormerDFER_baseline.txt
+    ├── M3DFEL_DFEW
+    │   ├── M3DFEL_AU.txt
+    │   └── M3DFEL_baseline.txt
+    ├── M3DFEL_FERV39K
+    │   ├── M3DFEL_AU.txt
+    │   └── M3DFEL_baseline.txt
+    ├── MAE-DFER_DFEW
+    │   ├── MAE-DFER_AU.txt
+    │   └── MAE-DFER_baseline.txt
+    └── MAE-DFER_FERV39K
+        ├── MAE-DFER-baseline.txt
+        └── MAE-DFER_AU.txt
+```
+
 # AU-DFER
 source code for AU-enhanced DFER
 ## Specification of Key Arguments

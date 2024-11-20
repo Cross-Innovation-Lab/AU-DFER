@@ -1,3 +1,6 @@
+# AU-DFER
+source code for AU-enhanced DFER
+## Program Preview
 ```
 .
 ├── AU_DFEW.txt
@@ -126,8 +129,7 @@
         └── MAE-DFER_AU.txt
 ```
 
-# AU-DFER
-source code for AU-enhanced DFER
+
 ## Specification of Key Arguments
 * `--AU_ratio`: the ratio of AU loss and expression loss, a float between 0 and 1.
 * `--posw_option`: determines the method of pos_weight for AU loss calculation, 'global', 'distinct', 'minor' accepted.

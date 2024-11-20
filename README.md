@@ -49,10 +49,10 @@ If you are using DFEW, please run following AU label set split:
 python gen_sets_AU.py
 ```
 ### Run training code
-For 5-sets traning on DFEW:
+For 5-sets trainng on DFEW:
 ```bash
 cd ..
-sh sh main_DFEW_trainer.sh
+sh main_DFEW_trainer.sh
 ```
 For FERV39K:
 ```bash

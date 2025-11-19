@@ -133,6 +133,9 @@ source code for AU-enhanced DFER
 ## Specification of Key Arguments
 * `--AU_ratio`: the ratio of AU loss and expression loss, a float between 0 and 1.
 * `--posw_option`: determines the method of pos_weight for AU loss calculation, 'global', 'distinct', 'minor' accepted.
+## AU Label download
+If you don't want to run AU detection model to obtain AU label, you can download via the following link:
+https://drive.google.com/drive/folders/1MY8hO9eCHHuJb0DcmRG8ALE7k-csW01y?usp=sharing
 ## for M3DFEL
 ### Libraries and Dependencies
 python 3.9 is required. For dependencies, please refer to [requirements.txt](M3DFEL_AU/requirements.txt).
